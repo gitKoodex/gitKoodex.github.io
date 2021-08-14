@@ -18,91 +18,127 @@
     h1,h2,h3{
         text-align: center;
     }
+    code{
+        direction: ltr;
+        text-align: left;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px){
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}
 </style>
 <body>
-    <h1>
-        تقویم فارسی برای لاراول
-    </h1>
-    <p>
-        تقویم فارسی برای وردپرس برای برگرداند تاریخ های میلادی به شمسی و برعکس است. 
-    </p>
-    <p>
-        من خودم برای تبدیل تایم استمپ موجود تو بانک به تاریخ شمسی ازش استفاده میکنم.
-    </p>
-    <h2>
-        چه جوری کار میکنه
-    </h2>
-    <p>
-        من خیلی اهل کد نویسی پیچیده نیستم برای همین همه چیز رو ساده نگه داشتم.
-    </p>
-    <ul>
-        <li>
-            مرحله اول لطفا پکیج persian date picker  رو دانلود کنید. 
-            <a href="http://babakhani.github.io/PersianWebToolkit/beta/datepicker/">
-                Persian Date Picker
-            </a>
-        </li>
-        <li>
-            از آدرس 
-            <a href="https://github.com/gitKoodex/koodex-persian-date-picker">
-                /koodex-persian-date-picker</a>
-                 تقویم فارسی رو کلون کنید.
-        </li>
-        <li>
-            فایل های persian date picker  را در پوشه public کپی کنید.
-        </li>
-        <li>
-            در ویوی خود هم کدهای مربوط به ویو که در سایت گفته شده کپی کنید.
-        </li>
-        <li>
-            تا اینجا همش رو کپی کردیم.
-        </li>
-        <li>
-پروژه لاراولی که دانلود کردید رو سرو کنید. در روت اصلی نحوه استفاده مشخصه 
-        </li>
-    </ul>
-    <h2>
-        جزئیات بیشتر
-    </h2>
-    <p>
-        اگر نسخه لاراول مد نظر شما با من فرق داره 
-    </p>
-    <p>
-        در ترمینان یا gitbash
-     دستور زیر رو درج کنید.
-     <br/>
-     <code>
-        composer create-project laravel/laravel --prefer-dist 
-     </code>
-    </p>
-    <p>
-        حالا از آدرس 
-        <a href="https://github.com/gitKoodex/koodex-persian-date-picker">تقویم فارسی لاراول</a>
-        <br/>
-        حالا پوشه thehelper رو دانلود کنید. 
-        <br/>
-        در ترمینال لاراول خود دستور 
-        npm update
-        رو اجرا کنید.
-        <br/>
-        حالا محتوای پوشه ایی که دانلود کردید به آدرس زیر کپی کنید.
-        <br/>
-        <code>
-            &lt;yourlaravelpath&gt;\vendor\laravel\framework\src\Illuminate\Foundation\
-        </code>
-        <br/>
-        حالا مراحل افزودن تقویم فارسی را انجام دهید سپس در ویو خود کدهای زیر را درج کنید.
-        <br/>
-        <code>
-            &lt;?php
-                use \Illuminate\Foundation\Jdate;
-                $Jdate = new Jdate();
-                ?&gt;
-                <br/>
-                {{($Jdate->jdate("Y/m/d","now"))}}
-        </code>
-
-
-    </p>
+    <main class="container">
+        <h1>
+            تقویم فارسی برای لاراول
+        </h1>
+        <p>
+            تقویم فارسی برای لاراول برای برگرداند تاریخ های میلادی به شمسی و برعکس است. 
+        </p>
+        <p>
+            من خودم برای تبدیل تایم استمپ موجود تو بانک به تاریخ شمسی ازش استفاده میکنم.
+        </p>
+        <h2>
+            چه جوری کار میکنه
+        </h2>
+        <p>
+            من خیلی اهل کد نویسی پیچیده نیستم برای همین همه چیز رو ساده نگه داشتم.
+        </p>
+        <ul>
+            <li>
+                مرحله اول لطفا پکیج persian date picker  رو دانلود کنید. 
+                <a href="http://babakhani.github.io/PersianWebToolkit/beta/datepicker/">
+                    Persian Date Picker
+                </a>
+            </li>
+            <li>
+                از آدرس 
+                <a href="https://github.com/gitKoodex/koodex-persian-date-picker">
+                    /koodex-persian-date-picker</a>
+                     تقویم فارسی رو کلون کنید.
+            </li>
+            <li>
+                فایل های persian date picker  را در پوشه public کپی کنید.
+            </li>
+            <li>
+                در ویوی خود هم کدهای مربوط به ویو که در سایت گفته شده کپی کنید.
+            </li>
+            <li>
+                تا اینجا همش رو کپی کردیم.
+            </li>
+            <li>
+    پروژه لاراولی که دانلود کردید رو سرو کنید. در روت اصلی نحوه استفاده مشخصه 
+            </li>
+        </ul>
+        <h2>
+            جزئیات بیشتر
+        </h2>
+        <p>
+            اگر نسخه لاراول مد نظر شما با من فرق داره 
+        </p>
+        <p>
+            در ترمینان یا gitbash
+         دستور زیر رو درج کنید.
+         <br/>
+         <code>
+            composer create-project laravel/laravel --prefer-dist 
+         </code>
+        </p>
+        <p>
+            حالا از آدرس 
+            <a href="https://github.com/gitKoodex/koodex-persian-date-picker">تقویم فارسی لاراول</a>
+            <br/>
+            حالا پوشه thehelper رو دانلود کنید. 
+            <br/>
+            در ترمینال لاراول خود دستور 
+            npm update
+            رو اجرا کنید.
+            <br/>
+            حالا محتوای پوشه ایی که دانلود کردید به آدرس زیر کپی کنید.
+            <br/>
+            <code>
+                &lt;yourlaravelpath&gt;\vendor\laravel\framework\src\Illuminate\Foundation\
+            </code>
+            <br/>
+            حالا مراحل افزودن تقویم فارسی را انجام دهید سپس در ویو خود کدهای زیر را درج کنید.
+            <br/>
+            <code>
+                &lt;?php
+                    use \Illuminate\Foundation\Jdate;
+                    $Jdate = new Jdate();
+                    ?&gt;
+                    <br/>
+                    {{($Jdate->jdate("Y/m/d","now"))}}
+            </code>
+        </p>
+    </main>   
 </body>
 </html>
