@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,61 +8,111 @@
     <title>Document</title>
 </head>
 <style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
     @font-face {
         font-family: "vasiri";
         src: url("Vazir-Medium.ttf") format('truetype');
     }
-    [lang=fa]{
+
+    [lang=fa] {
         direction: rtl;
         font-family: "vasiri";
+        line-height: 1.5rem;
     }
-    h1,h2,h3{
+
+    h1,
+    h2,
+    h3 {
         text-align: center;
     }
-    code{
+
+    code {
         direction: ltr;
         text-align: left;
+        padding: 1rem;
+        background: #f1f1d8;
     }
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    width: 100%;
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-    margin-right: auto;
-    margin-left: auto;
-}
-@media (min-width: 576px){
-    .container, .container-sm {
-        max-width: 540px;
+    img{
+        width: 100%;
     }
-}
-@media (min-width: 768px){
-    .container, .container-md, .container-sm {
-        max-width: 720px;
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
     }
-}
-@media (min-width: 992px){
-    .container, .container-lg, .container-md, .container-sm {
-        max-width: 960px;
+
+    @media (min-width: 576px) {
+
+        .container,
+        .container-sm {
+            max-width: 540px;
+        }
     }
-}
-@media (min-width: 1200px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1140px;
+
+    @media (min-width: 768px) {
+
+        .container,
+        .container-md,
+        .container-sm {
+            max-width: 720px;
+        }
     }
-}
-@media (min-width: 1400px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1320px;
+
+    @media (min-width: 992px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            max-width: 960px;
+        }
     }
-}
+
+    @media (min-width: 1200px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1140px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1320px;
+        }
+    }
 </style>
+
 <body>
     <main class="container">
         <h1>
             تقویم فارسی برای لاراول
         </h1>
         <p>
-            تقویم فارسی برای لاراول برای برگرداند تاریخ های میلادی به شمسی و برعکس است. 
+            تقویم فارسی برای لاراول برای برگرداند تاریخ های میلادی به شمسی و برعکس است.
         </p>
         <p>
             من خودم برای تبدیل تایم استمپ موجود تو بانک به تاریخ شمسی ازش استفاده میکنم.
@@ -74,19 +125,19 @@
         </p>
         <ul>
             <li>
-                مرحله اول لطفا پکیج persian date picker  رو دانلود کنید. 
+                مرحله اول لطفا پکیج persian date picker رو دانلود کنید.
                 <a href="http://babakhani.github.io/PersianWebToolkit/beta/datepicker/">
                     Persian Date Picker
                 </a>
             </li>
             <li>
-                از آدرس 
+                از آدرس
                 <a href="https://github.com/gitKoodex/koodex-persian-date-picker">
                     /koodex-persian-date-picker</a>
-                     تقویم فارسی رو کلون کنید.
+                تقویم فارسی رو کلون کنید.
             </li>
             <li>
-                فایل های persian date picker  را در پوشه public کپی کنید.
+                فایل های persian date picker را در پوشه public کپی کنید.
             </li>
             <li>
                 در ویوی خود هم کدهای مربوط به ویو که در سایت گفته شده کپی کنید.
@@ -95,50 +146,58 @@
                 تا اینجا همش رو کپی کردیم.
             </li>
             <li>
-    پروژه لاراولی که دانلود کردید رو سرو کنید. در روت اصلی نحوه استفاده مشخصه 
+                پروژه لاراولی که دانلود کردید رو سرو کنید. در روت اصلی نحوه استفاده مشخصه
             </li>
         </ul>
         <h2>
             جزئیات بیشتر
         </h2>
         <p>
-            اگر نسخه لاراول مد نظر شما با من فرق داره 
+            اگر نسخه لاراول مد نظر شما با من فرق داره
         </p>
         <p>
             در ترمینان یا gitbash
-         دستور زیر رو درج کنید.
-         <br/>
-         <code>
-            composer create-project laravel/laravel --prefer-dist 
-         </code>
+            دستور زیر رو درج کنید.
+        </p>
+        <p class class="ltr text-right">
+            <code>
+                composer create-project laravel/laravel --prefer-dist
+            </code>
         </p>
         <p>
-            حالا از آدرس 
+            حالا از آدرس
             <a href="https://github.com/gitKoodex/koodex-persian-date-picker">تقویم فارسی لاراول</a>
-            <br/>
-            حالا پوشه thehelper رو دانلود کنید. 
-            <br/>
-            در ترمینال لاراول خود دستور 
+            <br />
+            حالا پوشه thehelper رو دانلود کنید.
+            <br />
+            در ترمینال لاراول خود دستور
             npm update
             رو اجرا کنید.
-            <br/>
+            <br />
             حالا محتوای پوشه ایی که دانلود کردید به آدرس زیر کپی کنید.
-            <br/>
+        </p>
+        <p class="ltr text-right">
             <code>
                 &lt;yourlaravelpath&gt;\vendor\laravel\framework\src\Illuminate\Foundation\
             </code>
-            <br/>
+        </p>
+        <p>
             حالا مراحل افزودن تقویم فارسی را انجام دهید سپس در ویو خود کدهای زیر را درج کنید.
-            <br/>
+        </p>
+        <p class="ltr text-right">
             <code>
                 &lt;?php
-                    use \Illuminate\Foundation\Jdate;
-                    $Jdate = new Jdate();
-                    ?&gt;
-                    <br/>
-                    {{($Jdate->jdate("Y/m/d","now"))}}
+                use \Illuminate\Foundation\Jdate;
+                $Jdate = new Jdate();
+                ?&gt;
+                <br />
+                {{($Jdate->jdate("Y/m/d","now"))}}
             </code>
         </p>
-    </main>   
+        <p>
+            <img src="howloock.jpg" alt="نحوه نمایش تاریخ در لاراول">
+        </p>
+    </main>
 </body>
+
 </html>
