@@ -22,7 +22,7 @@
     [lang=fa] {
         direction: rtl;
         font-family: "vasiri";
-        line-height: 1.5rem;
+        line-height: 2.5rem
     }
     .rtl{
         direction: rtl !important;
@@ -32,6 +32,9 @@
     }
     .text-right{
         text-align: right;
+    }
+    .text-left{
+        text-align: left;
     }
     h1,
     h2,
@@ -44,6 +47,7 @@
         text-align: left;
         padding: 1rem;
         background: #f1f1d8;
+        display: block;
     }
     img{
         width: 100%;
@@ -62,6 +66,7 @@
         margin-right: auto;
         margin-left: auto;
     }
+    
 
     @media (min-width: 576px) {
 
@@ -98,6 +103,9 @@
         .container-sm,
         .container-xl {
             max-width: 1140px;
+        }
+        main{
+            padding: 1rem auto;
         }
     }
 
@@ -167,7 +175,7 @@
             در ترمینان یا gitbash
             دستور زیر رو درج کنید.
         </p>
-        <p class="ltr text-right">
+        <p class="ltr text-left">
             <code>
                 composer create-project laravel/laravel --prefer-dist
             </code>
@@ -184,7 +192,7 @@
             <br />
             حالا محتوای پوشه ایی که دانلود کردید به آدرس زیر کپی کنید.
         </p>
-        <p class="ltr text-right">
+        <p class="ltr text-left">
             <code>
                 &lt;yourlaravelpath&gt;\vendor\laravel\framework\src\Illuminate\Foundation\
             </code>
@@ -192,7 +200,7 @@
         <p>
             حالا مراحل افزودن تقویم فارسی را انجام دهید سپس در ویو خود کدهای زیر را درج کنید.
         </p>
-        <p class="ltr text-right">
+        <p class="ltr text-left">
             <code>
                 &lt;?php
                 use \Illuminate\Foundation\Jdate;
@@ -205,6 +213,28 @@
         <p>
             <img src="howloock.jpg" alt="نحوه نمایش تاریخ در لاراول">
         </p>
+        <hr/>
+        <h2>
+            هلپرهای جدید واسه لاراول
+        </h2>
+        <p>
+همینطور که در سمت پایین چپ عکس میبینید تقویم درج شده و با کمک هلپر با لاراول میشه دادههای تقویم فارسی رو مدیریت کرد.
+            </p>
+            <p>
+                در پایین سمت راست چند تا هلپر واسه لاراول اضافه کردم. که اگر بدرتون میخوره شما هم میتونین اضافه کنین.
+            </p>
+            <p>
+                طراحی و توسعه توسط سامان بالاهنگ در شرکت کودکس
+            </p>
+            <p>
+                //TODO:
+                <br>
+                <ul>
+                    <li>
+                        افزودن پکیج به نرم لیست پکیج های معروف
+                    </li>
+                </ul>
+            </p>
     </main>
 </body>
 
