@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="/final-home-graphic-last.png"/>
+    <title>kodex Persian Date Picker</title>
 </head>
 <style>
     * {
@@ -141,36 +142,77 @@
         </p>
         <ul>
             <li>
-                مرحله اول لطفا پکیج persian date picker رو دانلود کنید.
-                <a href="http://babakhani.github.io/PersianWebToolkit/beta/datepicker/">
-                    Persian Date Picker
-                </a>
-            </li>
-            <li>
-                از آدرس
-                <a href="https://github.com/gitKoodex/koodex-persian-date-picker">
-                    /koodex-persian-date-picker</a>
-                تقویم فارسی رو کلون کنید.
-            </li>
-            <li>
-                فایل های persian date picker را در پوشه public کپی کنید.
-            </li>
-            <li>
-                در ویوی خود هم کدهای مربوط به ویو که در سایت گفته شده کپی کنید.
-            </li>
-            <li>
-                تا اینجا همش رو کپی کردیم.
-            </li>
-            <li>
-                پروژه لاراولی که دانلود کردید رو سرو کنید. در روت اصلی نحوه استفاده مشخصه
-            </li>
+                1- composer create-project laravel/lavarel [youeproject name] --prefer-dist
+                </li>
+                <li>
+                (above line will install laravel for more information go to <a href="https://laravel.com/docs/">laravel web site</a>.)
+                </li>
+                <li>
+                2- download (<a href="https://github.com/gitKoodex/koodex-persian-date-picker.git">koodex-persian-date-picker</a> or clone it)
+                </li>
+                <li>
+                3- add content of public folder from downloaded koodex persian date picker to your laravel project
+                </li>
+                <li>
+                (in this folder we have jquery it's from <a href="https://jquery.com/download/">download jquery</a> if you wana you could upgrate it to final release)
+                </li>
+                <li>
+                (persian date picker for javascript from <a href="http://babakhani.github.io/PersianWebToolkit/beta/datepicker/">persian date picker</a> you can upgrate it too.)
+                </li>
+                <li>
+                (bootstrap from <a href="https://mdbootstrap.com/">free version of mdbootstrap</a>. this upgrate able too.)
+                </li>
+                <li>
+                4- in downloaded koodex persian date picker find resource folder replace content file Welcome.blade.php with same in your laravel project
+                </li>
+                <li>
+    <p>
+        
+                    5- in downloaded koodex persian date picker find the helper and copy the content to you'r laravel vendor project in this address
+                    </p>
+                    <p class="ltr text-left">
+                    <code>
+                        (your project address)\vendor\laravel\framework\src\Illuminate\Foundation
+
+                    </code>
+                    </p>
+                </li>
+                <li>
+                this is for laravel 8.5.4 if your laravel version is diferente. dont replace helper.php instead of that open helper.php from our git and find //my functions for that press ctrl+f and type //my function then copy all linse bellow this line to the end and paste them at the end of your laravel helper file in this address
+                </li>
+                <li>
+                    <p class="ltr text-left">
+                        <code>
+                            (your project address)\vendor\laravel\framework\src\Illuminate\Foundation
+</code>
+</p>
+                </li>
+               
+                
+                <li>
+                6- serve laravel project and in your web browser go to root url of your project
+                </li>
+                <li>
+                on git bash
+                </li>
+                <li>
+                    <p class="ltr text-left">
+                        <code>
+                            $ php artisan serve
+                        </code>
+                        </p>
+                </li>
+                            
+                <li>
+                on google chorme
+                </li>
+                <li>
+                <a href="http://localhost:8000">http://localhost:8000</a>
+                </li>
         </ul>
         <h2>
             جزئیات بیشتر
         </h2>
-        <p>
-            اگر نسخه لاراول مد نظر شما با من فرق داره
-        </p>
         <p>
             در ترمینان یا gitbash
             دستور زیر رو درج کنید.
