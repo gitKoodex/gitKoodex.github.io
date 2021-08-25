@@ -24,7 +24,7 @@ if($('body').hasClass('home')) {
             var therdNavul = document.createElement('ul');
             var therdNavLi = document.createElement('li');
             var therdNavImg = document.createElement('img');
-            $(therdNavImg).attr('src', 'http://codex.com/wp-content/uploads/2021/06/active.jpg');
+            $(therdNavImg).attr('src', '/wp-content/uploads/2021/06/active.jpg');
             $(therdNavLi).append(therdNavImg);
             $(therdNavul).append(therdNavLi);
             $(".second>.inner", this).append(therdNavul);
