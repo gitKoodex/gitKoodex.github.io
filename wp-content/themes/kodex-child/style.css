@@ -1,0 +1,512 @@
+/*
+Theme Name: Burst Child
+Theme URI: http://burst.mikado-themes.com/burst
+Description: A child theme of Burst Theme
+Author: Mikado Themes
+Author URI: http://www.mikado-themes.com
+Version: 1.0.0
+Template: burst
+*/
+@import url("../burst/style.css");
+@font-face {
+    font-family: 'codex';
+    src: url('fonts/IRANSans.eot?#') format('eot'),  /* IE6–8 */
+    url('fonts/IRANSansWeb.woff2') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('/fonts/IRANSans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'codex';
+    font-weight:400;
+    src: url('fonts/IRANSans_Medium.eot?#') format('eot'),  /* IE6–8 */
+    url('fonts/IRANSansWebMedium.woff2') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/IRANSans_Medium.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'codex';
+    font-weight:bold;
+    src: url('fonts/IRANSans_Bold.eot?#') format('eot'),  /* IE6–8 */
+    url('fonts/IRANSansWebBold.woff2') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/IRANSans_Medium.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: 'codex';
+    font-weight:100;
+    src: url('fonts/IRANSansWebLight.woff2') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+    font-family: 'BRoya';
+    src: url('fonts/BRoya.eot?#') format('eot'),  /* IE6–8 */
+    url('fonts/BRoya.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/BRoya.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+body,p,h1,h2,h3,h4,h5,h6,h6,a,li,span,.custom_font_holder *{
+    font-family: 'codex' !important;
+}
+body.codex-font{
+    font-family: 'codex' !important;
+}
+
+body.Roya-font{
+    font-family: 'BRoya';
+}
+
+html .ls-container, body .ls-container, #ls-global .ls-container, html .ls-container .ls-slide-transition-wrapper, body .ls-container .ls-slide-transition-wrapper, #ls-global .ls-container .ls-slide-transition-wrapper, html .ls-container .ls-slide-transition-wrapper *, body .ls-container .ls-slide-transition-wrapper *, #ls-global .ls-container .ls-slide-transition-wrapper *, html .ls-container .ls-bottom-nav-wrapper, body .ls-container .ls-bottom-nav-wrapper, #ls-global .ls-container .ls-bottom-nav-wrapper, html .ls-container .ls-bottom-nav-wrapper *, body .ls-container .ls-bottom-nav-wrapper *, #ls-global .ls-container .ls-bottom-nav-wrapper *, html .ls-container .ls-bottom-nav-wrapper span *, body .ls-container .ls-bottom-nav-wrapper span *, #ls-global .ls-container .ls-bottom-nav-wrapper span *, html .ls-direction-fix, body .ls-direction-fix, #ls-global .ls-direction-fix {
+    direction: rtl !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+.home h2{
+    margin-top: 9rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 2rem !important;
+    font-family: inherit !important;
+}
+
+element.style {
+    direction: ltr;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 2rem !important;
+    font-family: inherit !important;
+}
+h5, h5 a {
+    color: #283033;
+}
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
+    color: #283033;
+}
+h5 {
+    font-size: 19px;
+    line-height: 1.8421em;
+    font-weight: 300;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: 0;
+}
+user agent stylesheet
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+input, textarea, button, select, a, li, div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+Style Attribute {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+html .ls-container, body .ls-container, #ls-global .ls-container, html .ls-container .ls-slide-transition-wrapper, body .ls-container .ls-slide-transition-wrapper, #ls-global .ls-container .ls-slide-transition-wrapper, html .ls-container .ls-slide-transition-wrapper *, body .ls-container .ls-slide-transition-wrapper *, #ls-global .ls-container .ls-slide-transition-wrapper *, html .ls-container .ls-bottom-nav-wrapper, body .ls-container .ls-bottom-nav-wrapper, #ls-global .ls-container .ls-bottom-nav-wrapper, html .ls-container .ls-bottom-nav-wrapper *, body .ls-container .ls-bottom-nav-wrapper *, #ls-global .ls-container .ls-bottom-nav-wrapper *, html .ls-container .ls-bottom-nav-wrapper span *, body .ls-container .ls-bottom-nav-wrapper span *, #ls-global .ls-container .ls-bottom-nav-wrapper span *, html .ls-direction-fix, body .ls-direction-fix, #ls-global .ls-direction-fix {
+    direction: rtl !important;
+}
+html .ls-container, body .ls-container, #ls-global .ls-container, html .ls-container .ls-slide-transition-wrapper, body .ls-container .ls-slide-transition-wrapper, #ls-global .ls-container .ls-slide-transition-wrapper, html .ls-container .ls-slide-transition-wrapper *, body .ls-container .ls-slide-transition-wrapper *, #ls-global .ls-container .ls-slide-transition-wrapper *, html .ls-container .ls-bottom-nav-wrapper, body .ls-container .ls-bottom-nav-wrapper, #ls-global .ls-container .ls-bottom-nav-wrapper, html .ls-container .ls-bottom-nav-wrapper *, body .ls-container .ls-bottom-nav-wrapper *, #ls-global .ls-container .ls-bottom-nav-wrapper *, html .ls-container .ls-bottom-nav-wrapper span *, body .ls-container .ls-bottom-nav-wrapper span *, #ls-global .ls-container .ls-bottom-nav-wrapper span *, html .ls-direction-fix, body .ls-direction-fix, #ls-global .ls-direction-fix {
+    direction: rtl !important;
+}
+body {
+    font-family: 'codex' !important;
+}
+body {
+    color: #64686b;
+}
+body {
+   font-size: 14px;
+    line-height: 24px;
+    color: #64686b;
+    font-weight: 400;
+    background-color: #fff;
+    overflow-x: hidden!important;
+    -webkit-font-smoothing: antialiased;
+}
+#galerry .galleryPad{
+    padding: 1rem;
+}
+#galerry .imgContainer{
+    cursor: pointer;
+    border: 1px solid goldenrod;
+    min-height: 23rem;
+}
+::selection {
+    background: #cf9718 !important;
+}
+.dark-bg{
+    background:#3e3e4a url("http://codex.com/wp-content/uploads/2015/09/parallax-home-1.jpg") repeat center center;
+    color:white;
+}
+.full-height,.fullheight,.fullHeight{
+    height: 100vh;
+}
+.d-flex{
+    display: flex;
+}
+.darkimageGalery .imgContainer img{
+    width: 100%;
+}
+.darkimageGalery .imgContainer .textgalery{
+    padding: 1rem;
+    text-align:center;
+    margin: auto;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px) {
+    .col-md-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 0px;
+    }
+}
+.darkimageGalery{
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.dark-bg h1{
+        padding: 1rem !important;
+}
+.dark-bg h1, .dark-bg h1 a,.dark-bg h2,.dark-bg h2 a,.dark-bg h3,.dark-bg h3 a,.dark-bg h4,.dark-bg h4 a,.dark-bg h5,.dark-bg h5 a,.dark-bg h6,.dark-bg h6 a,.dark-bg p,.dark-bg a {
+    color: white;
+}
+.theblackwraper{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background: #00000064;
+    z-index: 999999;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.gallerybox{
+position: fixed;
+    background: white;
+    box-shadow: 1px 1px 20px 1px #000000;
+    z-index: 99999999999999999999999;
+    width: 50%;
+    padding: 1.5rem;
+    min-height: 50vh;
+    animation-name: alertbox;
+    animation-duration: 1s;
+    top:25%;
+    left: 25%;
+}
+@keyframes alertbox {
+    from {opacity: 0;  width: 0%; height: 0px;min-height: 0vh}
+    to {opacity: 1; width: 50%; height: auto ;min-height: 50vh;}
+
+}
+.showGallery{
+    justify-content: space-around;
+}
+.d-none{
+    display: none;
+}
+/*
+
+*/
+/* Slideshow container */
+#darkimageGalery .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+#darkimageGalery .mySlides {
+    display: none;
+    padding: 7rem 1rem;
+}
+
+/* Next & previous buttons */
+.gallerybox  .prev,.gallerybox   .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.gallerybox .prev{
+    left: 0px;
+}
+.gallerybox  .next{
+    right: 0px;
+}
+.gallerybox  .prev:before{
+    content: '\2329';
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+.gallerybox  .next::before{
+    content: '\232A';
+    width: 25px;
+    height: 25px;
+    color: black;
+}
+
+    /* Position the "next button" to the right */
+.gallerybox  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gallerybox  .prev:hover,.gallerybox   .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.gallerybox  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+#darkimageGalery .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+#darkimageGalery .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#darkimageGalery .active,#darkimageGalery  .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+#darkimageGalery .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.gallerybox .mySlides .imgContainer{
+    display: flex;
+    direction: ltr;
+    justify-content: space-around;
+    text-align: right;
+    padding: 6.5rem 1rem;
+
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+footer{
+    background: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 3rem 0rem;
+}
+footer a{
+    color: white;
+}
+
+/*
+single menu
+*/
+/*body.single nav.main_menu>ul>li{*/
+/*    position:relative ;*/
+/*}*/
+body.archive  nav.main_menu>ul>li>.second,body.single nav.main_menu>ul>li>.second,body.page nav.main_menu>ul>li>.second{
+    left: -74px;
+
+}
+
+
+body.archive  .drop_down .second .inner ul li ,body.single .drop_down .second .inner ul li,body.page .drop_down .second .inner ul li {
+    display: block;
+    padding: 0 15px;
+    position: relative;
+    float: left;
+    height: auto;
+    background: 0;
+    background-image: initial;
+    background-position-x: 0px;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: black;
+    width: 190px;
+    transition: background-color .15s ease-out;
+    -webkit-transition: background-color .15s ease-out;
+    -moz-transition: background-color .15s ease-out;
+    -ms-transition: background-color .15s ease-out;
+    -o-transition: background-color .15s ease-out;
+    direction: rtl;
+    text-align: right;
+}
+/*
+END single menu
+*/
+
+/*
+single page header
+*/
+
+body.archive .mypagesheader,body.single .mypagesheader,body.page .mypagesheader{
+    background: url("http://codex.com/wp-content/uploads/2021/06/New-Project-11.jpg") #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0;
+}
+body.archive .breadcrumbs,body.single .breadcrumbs{
+    color: white;
+
+}
+body.archive .breadcrumbs_inner,body.single .breadcrumbs_inner{
+    direction: rtl;
+    text-align: left;
+}
+body.archive .mypagesheader h1,body.single .mypagesheader h1,body.page .mypagesheader h1{
+    text-align: center;
+    color: white;
+}
+
+.woocommerce .product .woocommerce-accordion {
+    margin: 35px 0 0;
+
+}
+.woocommerce .mkd_accordion_holder .ui-accordion-header.title-holder {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 50px;
+    text-align: right;
+}
+/*
+END single page header
+*/
+.woocommerce ul.products li.product .add-to-cart-button, .woocommerce ul.products li.product .added_to_cart, .woocommerce .widget_price_filter .button, .woocommerce-page .widget_price_filter .button, .woocommerce .widget_shopping_cart_content p.buttons a.button, .woocommerce .content .button, .woocommerce-page .content .button, .woocommerce .content button.button, .woocommerce-page .content button.button, .woocommerce-page .content input[type="submit"]:not(.mkd_search_submit), .woocommerce .content input[type="submit"]:not(.mkd_search_submit) {
+    font-family: inherit !important;
+    /*font-size: 11px;*/
+    /*line-height: 41px;*/
+    /*letter-spacing: 1px;*/
+    /*font-weight: 900;*/
+    /*font-style: normal;*/
+    /*text-transform: uppercase;*/
+    /*color: #ffffff;*/
+    /*background-color: #18cfab;*/
+    /*border-width: 0px;*/
+    /*border-style: solid;*/
+    /*border-radius: 0px;*/
+    /*padding-left: 22px;*/
+    /*padding-right: 22px;*/
+}
+.woocommerce ul.products li.product span.product-categories a, .woocommerce div.product div.product_meta > span, .woocommerce-page ul.products li.product span.product-categories a, .woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price, .woocommerce aside ul.product_list_widget li span.amount, aside ul.product_list_widget li span.amount, .woocommerce .product .onsale.out-of-stock-button, .woocommerce-pagination ul.page-numbers li span.current, .woocommerce-pagination ul.page-numbers li a, .woocommerce .quantity input[type="text"].qty, .woocommerce #content .quantity input[type="text"].qty, .woocommerce-page .quantity input[type="text"].qty, .woocommerce-page #content .quantity input[type="text"].qty, .woocommerce div.product div.product_meta > span span, .woocommerce div.product div.product_meta > span a, .woocommerce aside.sidebar .woocommerce.widget ul.product-categories ul.children li a, aside ul.product-categories ul.children li a, .woocommerce-page aside.sidebar .woocommerce.widget ul.product-categories ul.children li a, .shopping_cart_header .header_cart span {
+    font-family: inherit !important;
+}
