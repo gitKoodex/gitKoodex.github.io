@@ -9,27 +9,27 @@ Template: burst
 */
 @import url("../kodex/style.css");
 @font-face {
-    font-family: 'codex';
+    font-family: 'vasiri';
     src: url('fonts/IRANSans.eot?#') format('eot'),  /* IE6–8 */
     url('fonts/IRANSansWeb.woff2') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
     url('/fonts/IRANSans.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 @font-face {
-    font-family: 'codex';
+    font-family: 'vasiri';
     font-weight:400;
     src: url('fonts/IRANSans_Medium.eot?#') format('eot'),  /* IE6–8 */
     url('fonts/IRANSansWebMedium.woff2') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
     url('fonts/IRANSans_Medium.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 @font-face {
-    font-family: 'codex';
+    font-family: 'vasiri';
     font-weight:bold;
     src: url('fonts/IRANSans_Bold.eot?#') format('eot'),  /* IE6–8 */
     url('fonts/IRANSansWebBold.woff2') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
     url('fonts/IRANSans_Medium.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 @font-face {
-    font-family: 'codex';
+    font-family: 'vasiri';
     font-weight:100;
     src: url('fonts/IRANSansWebLight.woff2') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
@@ -45,10 +45,10 @@ Template: burst
 }
 
 body,p,h1,h2,h3,h4,h5,h6,h6,a,li,span,.custom_font_holder *{
-    font-family: 'codex' !important;
+    font-family: 'vasiri' !important;
 }
 body.codex-font{
-    font-family: 'codex' !important;
+    font-family: 'vasiri' !important;
 }
 
 body.Roya-font{
@@ -130,7 +130,7 @@ html .ls-container, body .ls-container, #ls-global .ls-container, html .ls-conta
     direction: rtl !important;
 }
 body {
-    font-family: 'codex' !important;
+    font-family: 'vasiri' !important;
 }
 body {
     color: #64686b;
