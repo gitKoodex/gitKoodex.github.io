@@ -7,7 +7,7 @@ Author URI: http://www.mikado-themes.com
 Version: 1.0.0
 Template: burst
 */
-@import url("../burst/style.css");
+@import url("../kodex/style.css");
 @font-face {
     font-family: 'codex';
     src: url('fonts/IRANSans.eot?#') format('eot'),  /* IE6–8 */
@@ -38,6 +38,10 @@ Template: burst
     src: url('fonts/BRoya.eot?#') format('eot'),  /* IE6–8 */
     url('fonts/BRoya.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
     url('fonts/BRoya.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+@font-face {
+    font-family: "vasiri";
+    src: url("Vazir-Medium.ttf") format('truetype');
 }
 
 body,p,h1,h2,h3,h4,h5,h6,h6,a,li,span,.custom_font_holder *{
