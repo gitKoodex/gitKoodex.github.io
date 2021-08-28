@@ -156,7 +156,7 @@ body {
     background: #cf9718 !important;
 }
 .dark-bg{
-    background:#3e3e4a url("http://codex.com/wp-content/uploads/2015/09/parallax-home-1.jpg") repeat center center;
+    background:#3e3e4a url("/wp-content/uploads/2015/09/parallax-home-1.jpg") repeat center center;
     color:white;
 }
 .full-height,.fullheight,.fullHeight{
