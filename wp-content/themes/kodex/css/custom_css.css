@@ -1,9 +1,0 @@
-
-
-.z_index_top {position:relative; z-index:111;}
-
-@media only screen and (max-width: 600px) {
-    .header_top{
-        display: none !important;
-    }
-}

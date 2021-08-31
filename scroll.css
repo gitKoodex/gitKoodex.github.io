@@ -1,0 +1,93 @@
+@media (min-width:768px) {
+    #rs-f-f .absolute-eleman{
+        top: -15rem;
+        left: 24rem;
+    }
+    #rs-f-s .absolute-eleman{
+        top: -15rem;
+        left: 24rem;
+    }
+    #rs-f-th .absolute-eleman{
+        top: -15rem;
+        left: 24rem;
+    }
+    #ls-f-f .absolute-eleman{
+        top: -15rem;
+        left: -3rem;
+    }
+    #ls-f-s .absolute-eleman{
+        top: -15rem;
+        left: -3rem;
+    }
+
+    #rs-s-s .absolute-eleman{
+        top: -15rem;
+        left: 24rem;
+    }
+    #rs-s-th .absolute-eleman{
+        top: -15rem;
+        left: 24rem;
+    }
+    #rs-s-forth .absolute-eleman{
+        top: -15rem;
+        left: 9rem;
+    }
+
+
+
+    /* #ls-forth-s .absolute-eleman{
+        top: -26rem;
+    }
+    #ls-forth-f .absolute-eleman{
+        left: 15rem;
+    }
+    #ls-forth-th .absolute-eleman{
+        left: 19rem;
+    }
+    #ls-fifth-f .absolute-eleman{
+        top: -9rem;
+        left: 7rem;
+    }
+    #ls-sixth-s .absolute-eleman{
+        left: 11rem;
+    }
+     */
+  
+    /* 
+    #rs-th-s .absolute-eleman{
+        top: -19rem;
+        left: -9rem;
+    }
+   
+    #rs-forth-s .absolute-eleman{
+        top: -4rem;
+        left: -14rem;
+    }
+    #rs-forth-f .absolute-eleman{
+        top: -4rem;
+        left: -14rem;
+    }
+    #rs-fifth-f .absolute-eleman{
+        top: -4rem;
+        left: -10rem;
+    }
+    #fifth-left-side-row{
+        margin-top: -18rem;
+    }
+    #sixth-left-side-row{
+        margin-left: 8rem;
+    }
+    #third-right-side-row{
+        margin-right: -6rem;
+    } */
+    /* first position */
+    /* #right-side .absolute-eleman{
+        top: -6rem;
+        left: 19rem;
+    }
+    #left-side .absolute-eleman{
+       top: -6rem;
+       left: -25rem;  
+    } */
+
+}
