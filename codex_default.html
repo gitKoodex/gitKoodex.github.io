@@ -185,7 +185,7 @@
     /* scrool part */
     #scrollmagic {
       overflow: hidden !important;
-      padding: 15rem 0rem;
+      padding: 1rem 0rem;
     }
 
     .scroll-container {
@@ -199,8 +199,9 @@
     .side-eleman {
       text-align: center;
       width: 100%;
-      min-height: 1rem;
       position: relative;
+      /* background: yellow;
+      border: 1px solid black; */
     }
 
     .absolute-eleman {
@@ -210,6 +211,32 @@
       width: 1rem;
     }
 
+    #left-side.animate .side-eleman .absolute-eleman{
+      animation-name:mobilemation;
+      animation-duration:1.5s;
+    }
+    @keyframes mobilemation{
+      from{
+        margin:-1rem -3rem;
+      }
+      to{
+        margin:0;
+      }
+    }
+    #right-side.animate .side-eleman .absolute-eleman{
+      animation-name:rmobilemation;
+      animation-duration:1.5s;
+    }
+    @keyframes rmobilemation{
+      from{
+        margin-top:-1rem;
+        margin: -1rem 4rem;
+      }
+      to{
+        margin-top:0rem;
+        margin: 0rem;
+      }
+    }
     /* #left-side .absolute-eleman {
       position: absolute;
       top: -1.5rem;
@@ -449,6 +476,7 @@
       color: black;
     }
 
+
     @media (min-width:768px) {
 
       /* header */
@@ -495,6 +523,10 @@
         left: -4rem; */
         width: 100%;
       }
+      #scrollmagic {
+      overflow: hidden !important;
+      padding: 15rem 0rem;
+       }
     }
   </style>
   <link rel="stylesheet" href="scroll.css">
@@ -819,6 +851,88 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script>
+          var rs_f_f_IMG=Array();
+           rs_f_f_IMG["width"] = $("#rs-f-f .absolute-eleman img").width();
+           rs_f_f_IMG["height"] = $("#rs-f-f .absolute-eleman img").height();
+          //  console.log(rs_f_f_IMG["width"]);
+           console.log($("#ls-forth-f .absolute-eleman img").height());
+           console.log($("#center-side .side-eleman img").height());
+           var leftside = $("#center-side .side-eleman img").height()/6;
+           var rightside = $("#center-side .side-eleman img").height()/5;
+           console.log(leftside);
+
+           $("#rs-f-f").height(rightside);
+           $("#rs-f-th").height(rightside);
+           $("#rs-s-s").height(rightside);
+           $("#rs-s-th").height(rightside);
+           $("#rs-s-forth").height(rightside);
+           $("#rs-s-fifith").height(rightside);
+           $("#rs-th-f ").height(rightside);
+           $("#rs-th-s").height(rightside);  
+           $("#rs-forth-f").height(rightside);
+           $("#rs-forth-s").height(rightside);         
+           $("#rs-fifth-f ").height(rightside);
+
+           $("#rs-f-f .absolute-eleman").height(rightside);
+           $("#rs-f-th .absolute-eleman").height(rightside);
+           $("#rs-s-s .absolute-eleman").height(rightside);
+           $("#rs-s-th .absolute-eleman").height(rightside);
+           $("#rs-s-forth .absolute-eleman").height(rightside);
+           $("#rs-s-fifith .absolute-eleman").height(rightside);
+           $("#rs-th-f  .absolute-eleman").height(rightside);
+           $("#rs-th-s .absolute-eleman").height(rightside);  
+           $("#rs-forth-f .absolute-eleman").height(rightside);
+           $("#rs-forth-s .absolute-eleman").height(rightside);         
+           $("#rs-fifth-f  .absolute-eleman").height(rightside);
+
+
+           $("#ls-f-f").height(leftside);
+           $("#ls-f-s").height(leftside);
+           $("#ls-s-s").height(leftside);
+           $("#ls-s-f").height(leftside);
+           $("#ls-th-f ").height(leftside);
+           $("#ls-th-th").height(leftside);
+           $("#ls-forth-f").height(leftside);
+           $("#ls-forth-s").height(leftside);
+           $("#ls-forth-th").height(leftside);
+           $("#ls-fifth-f").height(leftside);
+           $("#ls-fifth-s").height(leftside);
+           $("#ls-fifth-th").height(leftside);
+           $("#ls-sixth-f").height(leftside);
+           $("#ls-sixth-s").height(leftside);
+
+           $("#ls-f-f .absolute-eleman").height(leftside);
+           $("#ls-f-s .absolute-eleman").height(leftside);
+           $("#ls-s-s .absolute-eleman").height(leftside);
+           $("#ls-s-f .absolute-eleman").height(leftside);
+           $("#ls-th-f  .absolute-eleman").height(leftside);
+           $("#ls-th-th .absolute-eleman").height(leftside);
+           $("#ls-forth-f.absolute-eleman").height(leftside);
+           $("#ls-forth-s .absolute-eleman").height(leftside);
+           $("#ls-forth-th  .absolute-eleman").height(leftside);
+           $("#ls-fifth-f  .absolute-eleman").height(leftside);
+           $("#ls-fifth-s  .absolute-eleman").height(leftside);
+           $("#ls-fifth-th  .absolute-eleman").height(leftside);
+           $("#ls-sixth-f  .absolute-eleman").height(leftside);
+           $("#ls-sixth-s  .absolute-eleman").height(leftside);
+    $(window).resize(function(){
+      location.reload();
+    });
+    if($(window).width() <= 320){
+      $("#ls-th-f .absolute-eleman").css("left","-1.5rem");
+      $("#ls-forth-s .absolute-eleman").css("left","-2.5rem");
+      $("#rs-th-f .absolute-eleman").css("left","1rem");
+      $(window).on('scroll', function () {
+        if(!$("#right-side").hasClass("animate")){
+          $("#right-side").addClass("animate");
+        }
+        if(!$("#left-side").hasClass("animate")){
+          $("#left-side").addClass("animate");
+        }
+        
+      });
+
+    }
     $(function () {
       var get_first_elemant_position = $("#first-left-side-row .side-eleman:first-child").position().top;
       var get_sec_elemant_position = $("#sec-left-side-row .side-eleman:first-child").position().top;
@@ -939,7 +1053,6 @@
         if ($(window).width() > 768) {
           var wherImI = $(window).scrollTop();
           if (wherImI < window.half_first_elemant_position) {
-
             $("#rs-f-f .absolute-eleman").css({
               "top": "-15rem",
               "left": "24rem"
@@ -1202,10 +1315,8 @@
               });
             }
           }
-        }
-        // fifth side
-
-        if ($(window).scrollTop() > window.half_fifth_elemant_position) {
+       
+          if ($(window).scrollTop() > window.half_fifth_elemant_position) {
           if (-15 + (($(window).scrollTop() - window.half_fifth_elemant_position) / 52.66) <= 2.52) {
             $("#rs-fifth-f .absolute-eleman").css({
               "top": 2 - (($(window).scrollTop() - window.half_fifth_elemant_position) / 600.66) + "rem",
@@ -1253,6 +1364,10 @@
             });
           }
         }
+        }
+        // fifth side
+
+       
 
 
 
